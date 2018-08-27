@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SlidingTabWithColorIcons-master.iml" filepath="$PROJECT_DIR$/SlidingTabWithColorIcons-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/new_masjeeder.iml" filepath="$PROJECT_DIR$/new_masjeeder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customimagetablayout/customimagetablayout.iml" filepath="$PROJECT_DIR$/customimagetablayout/customimagetablayout.iml" />
     </modules>
   </component>
 </project>

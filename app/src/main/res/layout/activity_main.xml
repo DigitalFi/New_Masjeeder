@@ -1,131 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.inge.new_masjeeder.MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <in.myinnos.customimagetablayout.ChangeColorTab
+        android:id="@+id/tabChangeColorTab"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="Activity_login"
-        android:orientation="vertical"
-        android:padding="10dp"
-        tools:ignore="OnClick">
+        <in.myinnos.customimagetablayout.ChangeColorItem
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            tab:item_icon="@drawable/kajian2_2"
+            tab:item_tab_color="@color/colorPrimary"
+            tab:item_tab_position="bottom"
+            tab:item_text="Kajian"
+            tab:item_text_color="@color/colorPrimaryDark"
+            tab:item_text_size="12sp" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/kajian" />
+        <in.myinnos.customimagetablayout.ChangeColorItem
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            tab:item_icon="@drawable/direktori3_2"
+            tab:item_tab_position="top"
+            tab:item_text="Direktori"
+            tab:item_text_size="12sp" />
 
-        <com.lobothijau.carouselsederhana.customfonts.MyTextView_Roboto_Regular
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Kajian" />
+        <in.myinnos.customimagetablayout.ChangeColorItem
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            tab:item_icon="@drawable/direktori2_2"
+            tab:item_tab_position="top"
+            tab:item_text="Quotes"
+            tab:item_text_color="@color/colorPrimary"
+            tab:item_text_size="12sp" />
 
-    </LinearLayout>
+        <in.myinnos.customimagetablayout.ChangeColorItem
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            tab:item_icon="@drawable/event2_2"
+            tab:item_tab_color="@color/colorAccent"
+            tab:item_tab_position="top"
+            tab:item_text="Event"
+            tab:item_text_color="@color/colorAccent"
+            tab:item_text_size="12dp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="Activity_supplier"
-            android:orientation="vertical"
-            android:padding="10dp"
-            tools:ignore="OnClick">
+    </in.myinnos.customimagetablayout.ChangeColorTab>
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/direktori" />
 
-            <com.lobothijau.carouselsederhana.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Direktori" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="Activity_project"
-            android:orientation="vertical"
-            android:padding="10dp"
-            tools:ignore="OnClick">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/quotes" />
-
-            <com.lobothijau.carouselsederhana.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Quotes" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="Activity_project"
-            android:orientation="vertical"
-            android:padding="10dp"
-            tools:ignore="OnClick">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/zis" />
-
-            <com.lobothijau.carouselsederhana.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Zakat" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="Activity_project"
-            android:orientation="vertical"
-            android:padding="10dp"
-            tools:ignore="OnClick">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/coworking" />
-
-            <com.lobothijau.carouselsederhana.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Working" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabChangeColorTab" />
+</RelativeLayout>

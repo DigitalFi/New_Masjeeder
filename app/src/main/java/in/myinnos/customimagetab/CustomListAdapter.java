@@ -20,7 +20,7 @@ import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import java.util.ArrayList;
 
 /**
- * Created by User on 4/4/2017.
+ * Created by Inge on 27/08/2018..
  */
 
 public class CustomListAdapter  extends ArrayAdapter<Card> {

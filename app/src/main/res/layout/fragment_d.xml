@@ -33,17 +33,15 @@
                     android:layout_weight="1"
                     android:layout_marginLeft="10dp"
                     android:textSize="14dp"
-                    android:textColor="#000"
+                    android:textColor="#a7adba"
                     android:background="#00000000"
-                    />
-
-
+                    android:text="Cari Event di Kota Anda" />
             </LinearLayout>
         </LinearLayout>
 
 
         <LinearLayout
-            android:background="	#dfe3ee"
+            android:background="#dfe3ee"
             android:orientation="horizontal"
             android:layout_marginTop="0dp"
             android:layout_width="match_parent"
